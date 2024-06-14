@@ -25,7 +25,7 @@ void setup()
         Serial.println("Error: LPS28DFW not connected, check wiring and I2C address!");
 
         // Wait a bit to see if connection is established
-        delay(1000);
+        delay(100);
     }
 
     Serial.println("LPS28DFW connected!");
@@ -41,7 +41,6 @@ void loop()
    // Serial.print("Temperature (C): ");
     //Serial.print(pressureSensor.data.heat.deg_c);
     Serial.print("\t\t");
-    Serial.print("Pressure (hPa): ");
     Serial.println(pressureSensor.data.pressure.hpa);
 
     // Only print every second
